@@ -33,3 +33,27 @@ if ((odd == 1 or odd == 0) and even >= 0):
 	print "YES"
 else:
 	print "NO"
+
+
+
+'''
+#!/bin/ruby
+ 
+def main
+  stack = []
+  gets.strip.split('').each { |c|
+    if !stack.index(c).nil?
+      stack.delete(c)
+    else
+      stack.push(c)
+    end
+  }
+  if stack.length <= 1
+    puts 'YES'
+  else
+    puts 'NO'
+  end
+end
+ 
+main
+'''
